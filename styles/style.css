@@ -2,12 +2,14 @@
 /*For the home page*/
 
 body {
+
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
 
 
 header {
@@ -65,6 +67,11 @@ nav ul li {
     width: 100%;
     flex-wrap: wrap; /* Allow wrapping to new lines on smaller screens */
     gap: 80px;
+}
+
+.para1 img{
+    position: relative;
+    align-items: 0px;
 }
 
 .block1,
@@ -138,9 +145,6 @@ nav ul li {
 
 
 
-
-
-
 .col{
     color:white;
     font-weight: bold;
@@ -170,7 +174,6 @@ nav ul li {
 }
 
 
-
 h1 {
     text-align: center;
     color: #000000;
@@ -197,11 +200,22 @@ h2 {
 ol {
     margin: 10px 0;
     position: absolute;
-    left: 360px;
+    left: 0px;
+    padding-top: 5px;
     
 }
 
 
+.para3 h2{
+   margin-bottom: 30px;
+   padding-top: 60px;
+}
+
+
+
+
+
+/*For the footer section*/
 .Social-icon{
     display: flex;/*horizontal line*/
     gap: 15px;
@@ -254,7 +268,7 @@ ol {
 }
 
 .footer div {
-    flex: 1 1 200px; 
+    flex: 1 1 100px; 
     margin: 10px;
 }
 
@@ -319,7 +333,7 @@ nav ul li a {
     margin-right:0px;
     margin-top: 20px;
     top: 30px;
-
+    margin-bottom: 15px;
     right: 1130px;
 }
 
@@ -352,13 +366,7 @@ nav ul li a {
     margin-top: 50px;
 }
 
-.container0 {  /*for the location text*/
-    position: absolute;
-    top: 110px;
-    right: 560px;
-    margin-top: 60px;
-    font-size: large;
-}  
+
     
 .container7 {  /*for the indiviual location text*/
     position: absolute;
@@ -419,11 +427,6 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.para p {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
 
 
 h1{
@@ -472,7 +475,7 @@ h1{
 }
 
 
-.image-text-section {
+.image-text-section1,.image-text-section2 {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -510,7 +513,13 @@ tfoot {
 /*For the services page*/
 
 
-
+.container0 {  /*for the location text*/
+    position: absolute;
+    top: 110px;
+    right: 560px;
+    margin-top: 60px;
+    font-size: larger;
+}  
 
 .container1 {
     width: 80%;
@@ -739,7 +748,7 @@ button:hover {
 /*for the pharmacy page*/
 
 body {
-    background-image: url("./images/beige.webp");
+    background-image: url("../images/beige.webp");
   }
 
 
@@ -891,6 +900,356 @@ h1 {
     flex-wrap: wrap;
     position: relative;
     left: 60px;
+
+}
+
+/* General Styles for Mobile (up to 768px wide) */  
+@media only screen and (max-width: 768px) {
+
+      /*for the index page*/
+        .header {
+          padding: 10px; /* Adjust padding as needed */
+          width: 100%;
+               }
+      
+        .header h1 {
+          font-size: 24px;
+        }
+      
+        .header p {
+          font-size: 16px;
+        }
+      
+
+    /* Logo and Header */
+    .logo-container1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .logo {
+        max-width: 50px;
+        display: flex;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    
+            
+    }
+
+    .nav { /*for the header*/
+        display:flex;
+        flex-direction: row;
+        margin-top: 10px;
+        box-sizing: border-box;
+        justify-content: left;
+        align-items:flex-start;
+        margin: 0px 5px;
+       
+    }    
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        font-size: 12px;
+        gap: 15px;
+        margin-bottom: 50px;
+        
+    }
+
+    nav ul a {
+        padding: 10px 0;
+        display: block;
+    }
+
+    .block1, .block2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .block1 img, .block2 img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+    /* Sections */
+    .content-blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    section img {
+       
+        margin: 10px auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+    .para1 p{
+       position:relative;
+       top: 20px;
+       text-align: center;
+       width: 400px;
+       padding-bottom: 10px;
+       padding-left: 20px;
+
+    }
+    
+    .para1 ul{
+        margin-top: 20px;
+        padding-top: 20px;    
+        margin-left: 80px;
+    }
+
+    .para1 img{
+        position: relative;
+        align-items: center;
+    }
+
+
+     .para2 img{
+        position: relative;
+        right: 5px;
+      
+        
+     }
+
+     .para2 p{
+        position:relative;
+        top: 20px;
+        text-align: center;
+        width: 400px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+     }
+
+     .para2 ol{
+            position: relative;
+            width: 150px;
+            padding-top: 10px;
+
+     }
+
+     ol { /*para 2 ordered list*/
+        margin: 10px 0;
+        position: absolute;
+        left: 450px;
+                
+    }
+
+     .para2 li{
+        position: relative;
+        right: 350px;
+        top: 10px;
+        padding-top: 10px;
+     }
+
+
+    .para3 p{
+        text-align: center;
+
+    }
+
+    .para3 ul{
+        padding-top: 20px;
+    }
+    .para3 li{
+        padding-top: 10px;
+        width: 200px;
+        margin-left: 100px;
+    }
+
+    
+    /*for the about us section*/
+    .container10{/*socials*/
+        position: absolute;
+        top: 110px;
+        right: 170px;
+        margin-top: 60px;
+        font-size: medium;
+        text-align: center;
+        width: 20%;
+
+    }
+
+    .vertical-menu {
+        position: relative;
+        bottom: 80px;
+        width: 130px;
+        padding-bottom: 200px;
+        padding-left: 200px;
+     
+    }
+      
+    .vertical-menu a {
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+      
+    .vertical-menu a:hover {
+        background-color: #ccc;
+      }
+
+      
+    .container0{ /*location*/
+        position: absolute;
+        left: 200px;
+        top: 478px;
+
+    }
+    
+    .container0 h1{
+        font-size: xx-large;
+
+    }
+
+    .container7{/*Dehiwala*/
+        position: relative;
+        left:  120px;
+        top:  0px;
+        width: 300px;
+
+    }
+
+    .container8{/*kattoor*/
+        position: relative;
+        left: 120px;
+        top: 175px;
+        width: 300px;
+
+    }
+
+    .container9{/*Mangaluru*/
+        position: relative;
+        top: 335px;
+        left: 120px;
+        width: 300px;
+
+    }
+
+    #map{
+        position: absolute;
+        top: 560px;
+        left: 100px;
+        
+    }
+
+    #map1{
+        position: absolute;
+        top: 970px;
+        left: 100px;
+       
+    }
+
+    #map2{
+        position: absolute;
+        top: 1320px;
+        left: 100px;
+
+    }
+
+    #aboutus{
+        position: absolute;
+        top: 1600px;/*2200*/
+        left: 180px;
+        
+    }
+
+    .para{
+        position: relative;
+        top: 70px;
+        text-align: center;
+        width: 350px;
+        left: 30px;
+
+    }
+
+    /*services page*/
+
+    .image-box img{
+        width: 300px;
+        position: relative;
+        left: 50px;
+        bottom: 20px;
+    }
+
+    .text-box p{
+        width: 300px;
+        position: relative;
+        right: 270px;
+        top: 250px;
+        padding-bottom: 200px;
+    }
+
+    .services-table-section{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .services-table{
+        width: 100%;
+    }
+
+    .image-placeholder img{
+        width: 250px;
+        position: relative;
+        right: 20px;
+    }
+    
+    .text-placeholder p{
+        width: 170px;
+        position: relative;
+        left: 95px;
+        bottom: 50px;
+    }
+
+    .form-group{
+        width: 250px;
+    }
+
+    .map-container img{
+        width: 282px;
+        height: 250px;
+        position: relative;
+        right: 80px;
+        top: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin-left: 0px;
+    }
+
+    .footer div {
+        margin-bottom: 0px; 
+        width: 100%;
+    }
+
+    .footer-social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-social-icons a {
+        margin: 0 8px; /* Reduced space between social icons */
+    }
+
+    .footer-social-icons img {
+        width: 25px;
+        height: 25px;
+    }
 
 }
 
