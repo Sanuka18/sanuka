@@ -17,67 +17,183 @@
     </head>
 <body>
     <header>
+      
         <nav>
-
             <div class="logo-container1">
                 <img src="./images/logo image.png" class="logo"/>
                 <h1 class="hospital-name">UnityCare Hospital</h1>
             </div>
-            <div class="topnav" id="myTopnav"></div>
+           
+
+            <ul class="sidebar">   <!--This to link the pages vertically-->
+                
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about us.html" class="active">About us</a></li>
+                <li><a href="./services.html" class="active">Services</a></li>
+                <li><a href="./doctors.html" class="active">Doctors</a></li>
+                <li><a href="./consulting reservation.html" class="active">Consulting reservation</a></li>
+                <li><a href="./pharmacy.html" class="active">Pharmacy</a></li>
+                <li><a href="./contact us.html" class="active">Contact Us</a></li>
+
+               
+            </ul>
+
             <ul>   <!--This to link the pages-->
                 
-                    <a href="./index.html" class="active">Home</a>
-                    <a href="./about us.html" class="active">About us</a>
-                    <a href="./services.html" class="active">Services</a>
-                    <a href="./doctors.html" class="active">Doctors</a>
-                    <a href="./consulting reservation.html" class="active">Consulting reservation</a>
-                    <a href="./pharmacy.html" class="active">Pharmacy</a>
-                    <a href="./contact us.html" class="active">Contact Us</a>
-
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa-fa-bars"></i>
-                    </a>
-             
+                    <li class="hideOnMobile"><a href="./index.html" class="active">Home</a></li>
+                    <li class="hideOnMobile"><a href="./about us.html" class="active">About us</a></li>
+                    <li class="hideOnMobile"><a href="./services.html" class="active">Services</a></li>
+                    <li class="hideOnMobile"><a href="./doctors.html" class="active">Doctors</a></li>
+                    <li class="hideOnMobile"><a href="./consulting reservation.html" class="active">Consulting reservation</a></li>
+                    <li class="hideOnMobile"><a href="./pharmacy.html" class="active">Pharmacy</a></li>
+                    <li class="hideOnMobile"><a href="./contact us.html" class="active">Contact Us</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            
                 </ul>
             </div>
         </nav>
     </header>
 
   
-
     <div class="container3">
         <h1>Doctors</h1>
     <br>
-    <br>
-        <div class="doctors-grid">
+
+    
+        <div class="responsive">
+            <div class="gallery">
+                <img src="./images/doctors hospital image 1.webp" alt="doctor image">
+              </a>
+              <div class="desc"><h3>Dr. Jackson Smith</h3></div>
+              <p>Specialist in Orthopedics</p>
+            </div>
+          </div>
           
-            <div class="doctor">
-                <img src="./images/doctors hospital image 1.webp">
-                <div class="doctor-info">
-                    <h3>Dr. John Doe</h3>
-                    <p>Specialist in Cardiology</p>
-                </div>
+         
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./images/doctors hospital image 2.webp" alt="doctor image">
+              </a>
+              <div class="desc"><h3>Dr. John Doe</h3></div>
+              <p>Specialist in Neurology</p>
             </div>
-    
-            <div class="doctor">
-                <img src="./images/doctors hospital image 2.webp">
-                <div class="doctor-info">
-                    <h3>Dr. Jackson Smith</h3>
-                    <p>Specialist in Neurology</p>
-                </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./images/doctors hospital image 3.jpg" alt="doctor image" >
+              </a>
+              <div class="desc"><h3> Dr. Emily White</h3></div>
+              <p>Specialist in Cardiology</p>
             </div>
-    
-           
-            <div class="doctor">
-                <img src="./images/doctors hospital image 3.jpg">
-                <div class="doctor-info">
-                    <h3>Dr. Emily White</h3>
-                    <p>Specialist in Orthopedics</p>
-                </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./images/jamescaart.jpg" alt="doctor image" >
+              </a>
+              <div class="desc"><h3>Dr. James Carter</h3></div>
+              <p>Specialist in Gastroenterology</p>
             </div>
-        </div>
-    
-       
+          </div>
+          
+          <div class="clearfix"></div>
+          
+          <div style="padding:15px;">
+          
+          </div>
+
+
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./images/olivia.jpg" alt="doctor image">
+              </a>
+              <div class="desc"><h3>Dr. Olivia Mitchell</h3></div>
+              <p>Specialist in Pulmonology  </p>
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./images/daniels.jpg" alt="doctor image" >
+              </a>
+              <div class="desc"><h3>Dr. Daniel Hayes</h3></div>
+              <p>Specialist in Endocrinology </p>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./images/sophia.jpg" alt="doctor image">
+              </a>
+              <div class="desc"><h3>Dr. Sophia Green</h3></div>
+              <p>Specialist in Oncology</p>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./images/william.jpg" alt="doctor image">
+              </a>
+              <div class="desc"><h3>Dr. William Brooks</h3></div>
+              <p>Specialist in Hematology</p>
+            </div>
+          </div>
+          
+          <div class="clearfix"></div>
+          
+          <div style="padding:15px;">
+          
+          </div>
+
+
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./images/ava.jpg" alt="doctor image">
+              </a>
+              <div class="desc"><h3>Dr. Ava Turner</h3></div>
+              <p>Specialist in Nephrology</p>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./images/micheal.jpg" alt="doctor image" >
+              </a>
+              <div class="desc"><h3>Dr. Michael Reed</h3></div>
+              <p>Specialist in Dermatology</p>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./images/ethan.jpg" alt="doctor image" >
+              </a>
+              <div class="desc"><h3>Dr. Ethan Morgan</h3></div>
+              <p>Specialist in Pediatrics </p>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./images/benj.jpg" alt="doctor image">
+              </a>
+              <div class="desc"><h3>Dr. Benjamin Foster</h3></div>
+              <p>Specialist in Ophthalmology </p>
+            </div>
+          </div>
+          
+          <div class="clearfix"></div>
+          
+          <div style="padding:15px;">
+          
+          </div>
+
+
+
+       <br>
         <div class="long-description">
             <p>
                 At UnityCare Hospital, our doctors are among the most highly qualified and respected professionals in the healthcare industry. Each of our specialists is committed to excellence in their respective fields, ensuring the best possible care for our patients. With extensive experience and continuous training, they stay at the forefront of medical advancements, incorporating the latest research and innovative treatment methods into patient care. Our doctors work collaboratively across departments, ensuring a multidisciplinary approach to complex cases. From cutting-edge procedures to compassionate bedside manner, they are dedicated to improving patient outcomes, promoting preventative healthcare, and advancing the field of medicine through research, education, and leadership in the medical community.
@@ -114,6 +230,20 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
 
 </body>
 </html>

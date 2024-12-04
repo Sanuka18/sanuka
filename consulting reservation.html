@@ -24,26 +24,37 @@
 
     <header>
         <nav>
-
             <div class="logo-container1">
                 <img src="./images/logo image.png" class="logo"/>
                 <h1 class="hospital-name">UnityCare Hospital</h1>
             </div>
-            <div class="topnav" id="myTopnav"></div>
+           
+
+            <ul class="sidebar">   <!--This to link the pages vertically-->
+                
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about us.html" class="active">About us</a></li>
+                <li><a href="./services.html" class="active">Services</a></li>
+                <li><a href="./doctors.html" class="active">Doctors</a></li>
+                <li><a href="./consulting reservation.html" class="active">Consulting reservation</a></li>
+                <li><a href="./pharmacy.html" class="active">Pharmacy</a></li>
+                <li><a href="./contact us.html" class="active">Contact Us</a></li>
+
+               
+            </ul>
+
             <ul>   <!--This to link the pages-->
                 
-                    <a href="./index.html" class="active">Home</a>
-                    <a href="./about us.html" class="active">About us</a>
-                    <a href="./services.html" class="active">Services</a>
-                    <a href="./doctors.html" class="active">Doctors</a>
-                    <a href="./consulting reservation.html" class="active">Consulting reservation</a>
-                    <a href="./pharmacy.html" class="active">Pharmacy</a>
-                    <a href="./contact us.html" class="active">Contact Us</a>
-
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa-fa-bars"></i>
-                    </a>
-             
+                    <li class="hideOnMobile"><a href="./index.html" class="active">Home</a></li>
+                    <li class="hideOnMobile"><a href="./about us.html" class="active">About us</a></li>
+                    <li class="hideOnMobile"><a href="./services.html" class="active">Services</a></li>
+                    <li class="hideOnMobile"><a href="./doctors.html" class="active">Doctors</a></li>
+                    <li class="hideOnMobile"><a href="./consulting reservation.html" class="active">Consulting reservation</a></li>
+                    <li class="hideOnMobile"><a href="./pharmacy.html" class="active">Pharmacy</a></li>
+                    <li class="hideOnMobile"><a href="./contact us.html" class="active">Contact Us</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            
                 </ul>
             </div>
         </nav>
@@ -61,17 +72,29 @@
             <form>
               
                 <div class="form-group">
-                    <label for="doctor"><img src="./images/consult reserv image1.png" width="50px" height="50px"> Doctor</label>
-                    <input type="text" id="doctor" placeholder="Choose your doctor">
+                    <label for="doctor"><img src="./images/consult reserv image1.png" width="50px" height="50px"><b> Doctor</b></label>
+                    <select id="doctors">
+                        <option value="Dr. Jackson Smith">Dr. Jackson Smith</option>
+                        <option value="Dr. John Doe">Dr. John Doe</option>
+                        <option value="Dr. Emily White">Dr. Emily White</option>
+                        <option value="Dr. James Carter">Dr. James Carter</option>
+                        <option value="Dr. Olivia Mitchell">Dr. Olivia Mitchell</option>
+                        <option value="Dr. Daniel Hayes">Dr. Daniel Hayes</option>
+                        <option value="Dr. Sophia Green">Dr. Sophia Green</option>
+                        <option value="Dr. William Brooks">Dr. William Brooks</option>
+                        <option value="Dr. Ava Turner">Dr. Ava Turner</option>
+                        <option value="Dr. Michael Reed">Dr. Michael Reed</option>
+                        <option value="Dr. Ethan Morgan">Dr. Ethan Morgan</option>
+                        <option value="Dr. Benjamin Foster">Dr. Benjamin Foster</option>
                 </div>
-    
+   
               
                 <div class="form-group">
                     <label for="location"><img src="./images/consult reserv image2.png" width="50px" height="50px"> Location</label>
                     <select id="location">
-                        <option value="dehiwala">Dehiwala</option>
-                        <option value="colombo">Kattoor Rd</option>
-                        <option value="kandy">Mangaluru</option>
+                        <option value="dehiwala"></option>
+                        <option value="colombo"></option>
+                        <option value="kandy"></option>
                     </select>
                 </div>
     
@@ -82,8 +105,15 @@
                         <option value="cardiology">Cardiology</option>
                         <option value="neurology">Neurology</option>
                         <option value="orthopedics">Orthopedics</option>
-                        <option value="pediatrics">Pediatrics</option>
-                        <option value="dermatology">Dermatology</option>
+                        <option value="Gastroenterology">Gastroenterology</option>
+                        <option value="Pulmonology">Pulmonology</option>
+                        <option value="Endocrinology">Endocrinology</option>
+                        <option value="Oncology">Oncology</option>
+                        <option value="Hematology">Hematology</option>
+                        <option value="Nephrology">Nephrology</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                        <option value="Ophthalmology">Ophthalmology</option>
                     </select>
                 </div>
                 <br>
@@ -92,15 +122,18 @@
                 <div class="form-group">
                     <label for="date"><img src="./images/consult reserve image 4.png" width="50px" height="50px">Date</label>
                     <select id="date">
-                        <option value="2024-09-10">September 10, 2024</option>
-                        <option value="2024-09-11">September 11, 2024</option>
-                        <option value="2024-09-12">September 12, 2024</option>
-                        <option value="2024-09-13">September 13, 2024</option>
+                        <option value="2024-12-16">December 16, 2024</option>
+                        <option value="2024-12-17">December 17, 2024</option>
+                        <option value="2024-12-18">December 18, 2024</option>
+                        <option value="2024-12-19">December 19, 2024</option>
+                        <option value="2024-12-20">December 20, 2024</option>
+                        <option value="2024-12-21">December 21, 2024</option>
+                        <option value="2024-12-22">December 22, 2024</option>
                     </select>
                 </div>
                 <br>
-    
-                <button type="submit">Book Appointment</button>
+                
+                <button type="submit"><a href="contact us.html">Appointment</a></button>
             </form>
         </div>
     </div>
@@ -133,6 +166,18 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 
 </body>
 </html>

@@ -22,26 +22,37 @@
     </style>
     <header>
         <nav>
-
             <div class="logo-container1">
                 <img src="./images/logo image.png" class="logo"/>
                 <h1 class="hospital-name">UnityCare Hospital</h1>
             </div>
-            <div class="topnav" id="myTopnav"></div>
+           
+
+            <ul class="sidebar">   <!--This to link the pages vertically-->
+                
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about us.html" class="active">About us</a></li>
+                <li><a href="./services.html" class="active">Services</a></li>
+                <li><a href="./doctors.html" class="active">Doctors</a></li>
+                <li><a href="./consulting reservation.html" class="active">Consulting reservation</a></li>
+                <li><a href="./pharmacy.html" class="active">Pharmacy</a></li>
+                <li><a href="./contact us.html" class="active">Contact Us</a></li>
+
+               
+            </ul>
+
             <ul>   <!--This to link the pages-->
                 
-                    <a href="./index.html" class="active">Home</a>
-                    <a href="./about us.html" class="active">About us</a>
-                    <a href="./services.html" class="active">Services</a>
-                    <a href="./doctors.html" class="active">Doctors</a>
-                    <a href="./consulting reservation.html" class="active">Consulting reservation</a>
-                    <a href="./pharmacy.html" class="active">Pharmacy</a>
-                    <a href="./contact us.html" class="active">Contact Us</a>
-
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa-fa-bars"></i>
-                    </a>
-             
+                    <li class="hideOnMobile"><a href="./index.html" class="active">Home</a></li>
+                    <li class="hideOnMobile"><a href="./about us.html" class="active">About us</a></li>
+                    <li class="hideOnMobile"><a href="./services.html" class="active">Services</a></li>
+                    <li class="hideOnMobile"><a href="./doctors.html" class="active">Doctors</a></li>
+                    <li class="hideOnMobile"><a href="./consulting reservation.html" class="active">Consulting reservation</a></li>
+                    <li class="hideOnMobile"><a href="./pharmacy.html" class="active">Pharmacy</a></li>
+                    <li class="hideOnMobile"><a href="./contact us.html" class="active">Contact Us</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            
                 </ul>
             </div>
         </nav>
@@ -70,7 +81,10 @@
         <a href="https://www.whatsapp.com/contact" target="_blank">Whatsapp</a>
       </div>
            
-
+<br>
+<br>
+<br>
+<br>
     <div id="aboutus"><h1>About Us</h1></div>
 
     <div id="map"><a href="https://www.google.com/maps/place/Unity+Healthcare/@6.8382825,79.8688915,15z/data=!4m6!3m5!1s0x3ae25b067eb55f79:0xa7912a43493701bd!8m2!3d6.8382825!4d79.8688915!16s%2Fg%2F11vkhh1l1h?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><img src="./images/Unity Healthcare - Google Maps - Google Chrome 9_8_2024 1_12_09 AM.png" width="320" height="210"></a></div>
@@ -80,18 +94,21 @@
 
     <div class="container7">  
         <div id="container"></div>
+        <img src="./images/Dehiwala hospital.jpg" alt ="dehiwala Hospital Image" width="320" height="210">
         <p><h2>Dehiwala</h2></p>
         <p>UnityCare Hospital, Dehiwala is a leading healthcare facility situated in the heart of Dehiwala, offering a wide range of medical services to the community.</p>  
     </div>   
 
     <div class="container8">  
         <div id="container"></div>
+        <img src="./images/kattoor image.jpg" alt ="kattoor Hospital Image" width="320" height="210">
         <p><h2>kattoor Road</h2></p>
         <p>UnityCare Hospital, located on Kattoor Road, is a state-of-the-art healthcare facility offering comprehensive medical services to the local community. </p>  
     </div>   
 
     <div class="container9">  
         <div id="container"></div>
+        <img src="./images/mangaluru image.jpg " alt ="mangaluru Hospital Image" width="320" height="210">
         <p><h2>Mangaluru</h2></p>
         <p>Unity Hospital in Mangaluru is a renowned multi-specialty healthcare institution, known for providing high-quality medical care and services.</p>  
     </div>   
@@ -105,27 +122,22 @@
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
 <section class="para">
         
-    <p>UnityCare Hospital employs, consults, and partners with the most dedicated, skilled, and experienced healthcare professionals to offer some of the country’s most advanced, evidence based clinical programmes for treating complex diseases, through our Centres of Excellence.
-        
-        All UnityCare Hospital have international accreditation.</p>
+    <p>UnityCare Hospital is a premier healthcare institution dedicated to delivering exceptional care through a team of highly skilled and experienced professionals. By employing, consulting, and partnering with leading experts across various medical fields, we provide some of the country’s most advanced, evidence-based clinical programs for diagnosing and treating complex diseases. Our Centres of Excellence integrate cutting-edge technology, research-driven treatments, and personalized care, ensuring the highest standards of patient outcomes. With international accreditations, every UnityCare Hospital upholds a commitment to quality, safety, and excellence in healthcare delivery.</p>
 </section>
                 
 
                 <div class="image-text-section1">
                     <img src="./images/about us hospital image 1.webp" width="500px" height="200px">
-                    <p>UnityCare Hospital is committed to providing the highest level of medical care with a compassionate, patient-centered approach. We employ a dedicated team of skilled doctors, nurses, and healthcare professionals who specialize in treating complex diseases and offering preventative care. </p>
+                    <p>UnityCare Hospital is committed to providing the highest level of medical care with a compassionate, patient-centered approach. We employ a dedicated team of skilled doctors, nurses, and healthcare professionals who specialize in treating complex diseases and offering preventative care. By combining cutting-edge medical technology with evidence-based practices, we ensure that our patients receive the most accurate diagnoses and effective treatments. Our multidisciplinary teams collaborate to create personalized care plans tailored to each individual’s unique needs, fostering trust and promoting recovery.  </p>
                 </div>
 <br>
 
                 <div class="image-text-section2">
-                    <p>UnityCare Hospital is recognized for its exceptional patient outcomes and innovative healthcare solutions. We have a proven track record in delivering top-quality medical services, from advanced surgeries to specialized treatments.</p>
+                    <p>UnityCare Hospital is recognized for its exceptional patient outcomes and innovative healthcare solutions. We have a proven track record in delivering top-quality medical services, ranging from advanced surgeries to specialized treatments, supported by a multidisciplinary team of experts. Our commitment to innovation ensures that patients benefit from the latest advancements in medical technology, minimally invasive procedures, and evidence-based practices. With a patient-centric approach, we prioritize compassionate care, personalized treatment plans, and a seamless healthcare experience. </p>
                     <img src="./images/about us hospital image 2.webp" width="500px" height="200px">
                 </div>
 
@@ -197,6 +209,20 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
 
 </body>
 </html>
