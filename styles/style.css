@@ -117,7 +117,7 @@ nav a:hover{
     height: 100vh;
     z-index: 999;
     background-color: rgba(121, 167, 189, 0.479);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     display: none;
     flex-direction: column;
