@@ -96,6 +96,16 @@ nav a:hover{
 }
 
 @media(max-width:500px){
+
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+
     .sidebar{
         width: 100%;
     }
@@ -126,14 +136,33 @@ nav a:hover{
       margin-left: 5px;
   }
 
+  .logo-container1 h1{
+    position: relative;
+    left: 20px;
+    top:10px;
+    margin-bottom:10px;
+    margin-top: 0;
+  }
+
   .logo {
-      max-width: 30px;
+      max-width: 35px;
       display: flex;
       margin-bottom: 5px;
       margin-right: 50px;
-  
-          
+       
   }
+
+  img.logo{
+       padding-bottom: 0;
+       margin-bottom: 0;
+       
+  }
+
+  h1.hospital-name{
+    position: relative;
+    bottom: 20px;    
+  }
+
 
   .nav { /*for the header*/
       display:flex;
@@ -144,6 +173,8 @@ nav a:hover{
       align-items:flex-start;
       margin: 0px 5px;
       
+      
+      
      
   }    
 
@@ -153,14 +184,16 @@ nav a:hover{
       text-align: center;
       font-size: 12px;
       gap: 15px;
-      margin-bottom: 50px;
-      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-right: 10px;
       
   }
 
   nav ul a {
       padding: 10px 0;
       display: block;
+      
+
   }
 
   .block1, .block2 {
@@ -192,20 +225,25 @@ nav a:hover{
       
   }
 
+
+
+
   .para1 p{
      position:relative;
-     top: 30px;
+     top: 20px;
      text-align: center;
-     width: 400px;
+     width: 350px;
      padding-bottom: 10px;
      padding-left: 5px;
      margin-right: 10px;
      padding: 5px;
+     padding-right: 50px;
+     left: 40px;
 
   }
   
   .para1 ul{
-      margin-top: 100px;
+      margin-top: 50px;
       padding-top: 10px;    
       margin-left: 20px;
   }
@@ -218,54 +256,73 @@ nav a:hover{
 
    .para2 img{
       position: relative;
-      right: 5px;
-    
+      left: 1px;
+      width: 300px;
+      top: 20px;
       
    }
 
    .para2 p{
       position:relative;
-      top: 20px;
+      top: 70px;
       text-align: center;
-      width: 400px;
-      padding-bottom: 10px;
+      width: 320px;
+      left: 20px;
       padding-left: 20px;
+      
    }
 
    .para2 ol{
           position: relative;
-          width: 150px;
-          padding-top: 10px;
+          width: 280px;
+          padding-top: 20px;
+          margin-left: 200px;
+          top: 70px;
+   
 
    }
 
    ol { /*para 2 ordered list*/
       margin: 10px 0;
-      position: absolute;
-      left: 450px;
+      position: relative;
+      left: 150px;
+      padding-bottom: 0px;
               
   }
 
    .para2 li{
       position: relative;
-      right: 350px;
+      right: 150px;
       top: 10px;
       padding-top: 10px;
    }
 
+   .para3 img{
+        position: relative;
+        width: 300px;
+        top: 5px;
+   }
 
   .para3 p{
       text-align: center;
+      width: 350px;
+      position: relative;
+      left: 20px;
+      
 
+  }
+  .para3 h2{
+    position: relative;
+    bottom: 10px;
   }
 
   .para3 ul{
-      padding-top: 20px;
+      padding-top: 10px;
   }
   .para3 li{
       padding-top: 10px;
-      width: 50px;
-      margin-left: 100px;
+      /* width: 50px;
+      margin-left: 100px; */
   }
 
   
@@ -283,10 +340,12 @@ nav a:hover{
 
   .vertical-menu {
       position: relative;
-      bottom: 80px;
+      bottom:20px;
       width: 130px;
-      padding-bottom: 200px;
-      padding-left: 200px;
+      padding-bottom: 210px;
+      padding-left: 5px;
+      left: 150px;
+      padding-top: 20px;
    
   }
     
@@ -301,8 +360,8 @@ nav a:hover{
 
     
   .container0{ /*location*/
-      position: absolute;
-      left: 200px;
+      position: relative;
+      left: 170px;
       top: 478px;
 
   }
@@ -312,11 +371,12 @@ nav a:hover{
 
   }
 
-  .container7{/*Dehiwala*/
+  .container7 p{/*Dehiwala*/
       position: relative;
-      left:  120px;
+      right:  120px;
       top:  0px;
-      width: 300px;
+      width: 10px;
+      padding: 50px;
 
   }
 
@@ -325,6 +385,7 @@ nav a:hover{
       left: 120px;
       top: 175px;
       width: 300px;
+      padding: 200px;
 
   }
 
@@ -333,20 +394,37 @@ nav a:hover{
       top: 335px;
       left: 120px;
       width: 300px;
+      padding: 200px;
+      
 
   }
 
+    .container p{
+        width: 40px;
+    }
+ 
+   #map img{
+        width: 250px;
+        position: relative;
+        right: 60px; 
+        top: 300px;
+    }
+
   #map{
-      position: absolute;
+      position:relative;
       top: 560px;
-      left: 100px;
+      left:40px;
+
       
   }
 
   #map1{
       position: absolute;
-      top: 970px;
+      top: 170px;
       left: 100px;
+      padding-right: 100px;
+      padding-top: 400px;
+      margin-left: 100px;
      
   }
 
@@ -376,18 +454,29 @@ nav a:hover{
   /*services page*/
 
   .image-box img{
-      width: 300px;
+      width: 200px;
       position: relative;
-      left: 50px;
+      right:50px;
       bottom: 20px;
   }
 
+
+   .header{
+    position: relative;
+    left: 20px;
+  }
+  .services-intro{
+    width: 20px;
+    position: relative;
+    right: 20px;
+    bottom: 40px;
+  }
   .text-box p{
       width: 300px;
       position: relative;
-      right: 270px;
-      top: 250px;
-      padding-bottom: 200px;
+      right: 520px;
+      top: 400px;
+      padding-bottom: 320px;
   }
 
   .services-table-section{
@@ -413,9 +502,6 @@ nav a:hover{
       bottom: 50px;
   }
 
-  .form-group{
-      width: 250px;
-  }
 
   .map-container img{
       width: 282px;
@@ -424,6 +510,71 @@ nav a:hover{
       right: 80px;
       top: 20px;
   }
+
+  .container3 h1{
+    font-size:xx-large;
+  } 
+
+  .container4 h1{
+    font-size:x-large;
+    position: relative;
+    left: 20px;
+    top: 30px;
+  } 
+
+  .form-container{
+    width: 50px;
+    position: relative;
+    bottom: 30px;
+
+  }
+
+  div.form-container{
+    width: 300px;
+    position: relative;
+    bottom: 60px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+
+  a.active{
+    font-size: 15px;
+  }
+
+  .form-group{
+    width: 50px;
+  }
+
+  .container4{
+    width: 200px;
+  }
+
+
+  .container6 h1{
+    font-size: large;
+    position: relative;
+    left: 20px;
+    top: 5px;
+  }
+
+  div.container6{
+    width: 300px;
+    position: relative;
+    bottom: 1px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+
+  }
+
+  .map-container img{
+            width: 250px;
+            height: 200px;
+            position: relative;
+            right: 56px;
+            top: 1px;
+
+  }
+
 
   .footer {
       display: flex;
