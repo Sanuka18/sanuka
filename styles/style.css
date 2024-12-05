@@ -115,6 +115,7 @@ nav a:hover{
     top: 0 ;
     right: 0;
     height: 100vh;
+    width: 250px;
     z-index: 999;
     background-color: rgba(121, 167, 189, 0.479);
     backdrop-filter: blur(30px);
