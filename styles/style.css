@@ -957,7 +957,7 @@ ol {
 #map2{
     position: absolute;
     top: 250px;
-    left: 890px;
+    left: 900px;
     margin-top: 50px;
 }
 
@@ -987,7 +987,7 @@ ol {
 .container9 {  /*for the indiviual location text*/
     position: absolute;
     top: 450px;
-    left: 890px;
+    left: 900px;
     margin-top: 60px;
     font-size: medium;
     text-align: center;
