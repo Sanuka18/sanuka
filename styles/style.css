@@ -943,21 +943,21 @@ ol {
 #map{
     position: absolute;
     top: 250px;
-    left: 200px;
+    left: 150px;
     margin-top: 50px;
 }
 
 #map1{
     position: absolute;
     top: 250px;
-    left: 580px;
+    left: 520px;
     margin-top: 50px;
 }
 
 #map2{
     position: absolute;
     top: 250px;
-    left: 960px;
+    left: 890px;
     margin-top: 50px;
 }
 
@@ -966,7 +966,7 @@ ol {
 .container7 {  /*for the indiviual location text*/
     position: absolute;
     top: 450px;
-    left: 200px;
+    left: 150px;
     margin-top: 60px;
     font-size: medium;
     text-align: center;
@@ -977,7 +977,7 @@ ol {
 .container8 {  /*for the indiviual location text*/
     position: absolute;
     top: 450px;
-    left: 580px;
+    left: 520px;
     margin-top: 60px;
     font-size: medium;
     text-align: center;
@@ -987,7 +987,7 @@ ol {
 .container9 {  /*for the indiviual location text*/
     position: absolute;
     top: 450px;
-    right:163px;
+    left: 890px;
     margin-top: 60px;
     font-size: medium;
     text-align: center;
