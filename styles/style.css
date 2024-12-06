@@ -1006,14 +1006,6 @@ ol {
 }  
   
 
-.container7,
-.container8,
-.container9{
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
-
 
   h1 {  
     text-align: center; 
