@@ -358,132 +358,123 @@ nav a:hover{
   }
 
   
-  /*for the about us section*/
-  .container10{/*socials*/
-      position: absolute;
-      top: 110px;
-      right: 170px;
-      margin-top: 60px;
-      font-size: medium;
-      text-align: center;
-      width: 20%;
-
-  }
-
-  .vertical-menu {
-      
-      bottom:20px;
-      width: 130px;
-      padding-bottom: 210px;
-      padding-left: 150px;
-      
-      padding-top: 20px;
-   
-  }
-    
-  .vertical-menu a {
-      color: rgb(0, 0, 0);
-      text-align: center;
-      
-    }
-    
-  .vertical-menu a:hover {
-      background-color: #ccc;
-    }
-
-    
-  .container0{ /*location*/
-      position: relative;
-      left: 170px;
-      top: 478px;
-
-  }
   
-  .container0 h1{
-      font-size: xx-large;
+  /*for the about us section*/
 
-  }
 
-  .container7 p{/*Dehiwala*/
-      position: relative;
-      right:  120px;
-      top:  0px;
-      width: 10px;
-      padding: 50px;
 
-  }
+ .logo-container1 {
+        font-size: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
-  .container8{/*kattoor*/
-      position: relative;
-      left: 120px;
-      top: 175px;
-      width: 300px;
-      padding: 200px;
-
-  }
-
-  .container9{/*Mangaluru*/
-      position: relative;
-      top: 335px;
-      left: 120px;
-      width: 300px;
-      padding: 200px;
-      
-
-  }
-
-    .container p{
+    .logo {
         width: 40px;
+        margin: 10px 0;
     }
- 
-   #map img{
-        width: 250px;
+
+    #aboutus {
+        position: static;
+        margin: 20px auto;
+        font-size: medium;
+        text-align: center;
+        
+    }
+
+    #aboutus h1{
         position: relative;
-        right: 60px; 
-        top: 300px;
+        bottom: 600px;
     }
 
-  #map{
-      position:relative;
-      top: 560px;
-      left:40px;
 
-      
-  }
+    #map {
+        position: static;
+        top: 0px;
+        
+    }
 
-  #map1{
-      position: absolute;
-      top: 170px;
-      left: 100px;
-      padding-right: 100px;
-      padding-top: 400px;
-      margin-left: 100px;
-     
-  }
+     #map1, #map2 {
+        position: relative;
+        margin: 10px auto;
+        width: 250px;
+    }
 
-  #map2{
-      position: absolute;
-      top: 1320px;
-      left: 100px;
+    .container7, .container8, .container9 {
+        position: static;
+        margin: 10px auto;
+        width: 90%;
+        text-align: center;
+    }
 
-  }
+    .container7 img, .container8 img {
+        width: 320px;
+        height: 200px;
+    }
 
-  #aboutus{
-      position: absolute;
-      top: 1600px;/*2200*/
-      left: 180px;
-      
-  }
+    .container9 img{
+        width: 320px;
+        height: 200px;
+    }
 
-  .para{
-      position: relative;
-      top: 70px;
-      text-align: center;
-      width: 350px;
-      left: 30px;
+    .container10 {
+        position: static;
+        margin: 10px auto;
+        text-align: center;
+    }
 
-  }
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
 
+    .para {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .image-text-section1, .image-text-section2 {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .image-text-section img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    .vertical-menu {
+        width: 100%;
+        margin: 20px 0;
+        position: relative;
+        left: 100px;
+        
+        
+    }
+
+    .vertical-menu a {
+        font-size: 12px;
+        padding: 10px;
+
+    }
+
+
+
+
+  
   /*services page*/
 
   .image-box img{
@@ -600,11 +591,11 @@ nav a:hover{
   }
 
   .map-container img{
-            width: 250px;
-            height: 200px;
-            position: relative;
-            right: 56px;
-            top: 1px;
+        width: 250px;
+        height: 200px;
+        position: relative;
+        right: 56px;
+        top: 1px;
 
   }
 
@@ -1108,6 +1099,7 @@ tfoot {
     background-color: #f1f1f1;
     font-weight: bold;
 }
+
 
 
 
