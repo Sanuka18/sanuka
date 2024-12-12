@@ -1,0 +1,255 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+
+.glow {
+    font-size: 3.5rem;
+    color: rgb(46, 55, 146);
+    text-align: center;
+    animation: glow 2s ease-in-out infinite alternate;
+    margin-bottom: 4.5rem;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #8a98a4, 0 0 20px #c3c9ce, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #568693, 0 0 40px #60a0c2, 0 0 20px #4c6ca0, 0 0 10px #49748f, 0 0 10px #22437a, 0 0 10px #718387;
+    }
+  }  
+
+  @media(max-width:500px){
+    .medicine-grid  h1{
+        font-size: 30px;
+        width: 100%;
+
+    }
+
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+  }
+
+
+
+.medicine-grid {
+    padding: 2rem;
+    text-align: center;
+}
+
+.medicine-grid h3{
+    font-size: 30px;
+    margin-bottom: 2.5rem;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+
+.medicine-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.medicine-card:hover {
+    transform: translateY(-5px);
+}
+
+.medicine-card img {
+    max-width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.medicine-card h4 {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+button.add-to-cart {
+    background-color: #5dab62;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    width: 100%;
+   
+    
+}
+
+button.add-to-cart:hover {
+    background-color: #218838;
+}
+
+
+button.add-to-favourites {
+    background-color: #5dab62;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: 10px;
+}
+
+button.add-to-favourites:hover {
+    background-color: #218838;
+}
+
+button.apply-favourites {
+    background-color: #5dab62;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 90%;
+    margin-left: 10px;
+}
+
+button.apply-favourites:hover {
+    background-color: #218838;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+}
+
+
+.cart {
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.cart button{
+    width: 50%;
+    margin-left: 180px;
+}
+
+.cart h2 {
+    margin-top: 0;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.remove-item {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    right: 80px;
+}
+
+
+
+
+/* checkout page */
+
+.checkout-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #217da4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#success-message {
+    text-align: center;
+    padding: 20px;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+
+.checkout-container p{
+    text-align: center;
+}

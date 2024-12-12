@@ -1395,98 +1395,55 @@ button:hover {
 
 /*for the pharmacy page*/
 
-body {
-    background-image: url("../images/beige.webp");
-  }
 
-
-.container5 {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgb(225, 232, 231);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+h1, h2 {
     text-align: center;
+}
+
+.medicine-category {
     margin-bottom: 20px;
 }
 
-.text-block {
-    text-align: center;
-    margin-bottom: 20px;
+.medicine-category label {
+    display: block;
+    margin: 5px 0;
 }
 
-.image-text-container {
-    display: flex;
-    position: relative;
-    margin-left: 200px;
-    align-items: center;
-    margin-bottom: 20px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
-.image-placeholder {
-    width: 200px;
-    height: 200px;
-    background-color: white;
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+.buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: 2px solid #ccc;
-  
+    gap: 10px;
 }
 
-.text-placeholder {
-    width: 450px;
-    position: absolute;
-    right: 50px;
-    margin-left: 200px;
-
-}
-
-.text-placeholder p {
-    height: 150px;
-    margin: 10px 0;
-}
-
-.service-dropdown {
-    text-align: center;
-}
-
-select {
-    padding: 10px;
-    font-size: 16px;
-}
-
-a:link {  /*this will remove the line underneath the text which is linked*/
-    text-decoration: none;
-}
-  
-a:visited {
-    text-decoration: none;
-}
-  
-a:hover {
-    text-decoration: none;
-}
-  
-a:active {
-    text-decoration: none;
-}
-
-.button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #218838;
-    color: white;
+button {
+    padding: 10px 15px;
     border: none;
+    background-color: #007BFF;
+    color: white;
     cursor: pointer;
-    
+    border-radius: 5px;
 }
 
-.button:hover {
+button:hover {
     background-color: #0056b3;
 }
 
